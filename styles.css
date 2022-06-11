@@ -1,0 +1,86 @@
+body {
+    background-color: #2980b8;
+    background: linear-gradient(to right, #2c3e50, #2980b9);
+}
+
+.responsive {
+    max-width: 75%;
+    height: auto;
+}
+
+img {
+    padding: 15px;
+}
+
+
+.displayBox {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.scroll-box {
+    overflow-y: auto;
+    height: 500px;
+    float: left;
+    padding: 1rem;
+}
+
+#markme {
+    background-color: gold;
+    color: #000;
+    border-radius: 10px;
+}
+
+
+#replace-btn {
+    float: right;
+    display: none;
+}
+
+#search-count {
+    font-size: 1rem;
+    display: inline-block;
+}
+
+#search-card {
+    position: relative;
+}
+
+#replace-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    animation: rep 400ms ease-in-out forwards;
+}
+
+.show {
+    display: flex;
+}
+
+@keyframes rep {
+    0% {
+        transform: scale(0);
+    }    
+    100% {
+        transform: scale(1);
+    }
+}
+
+#replace-container h5 {
+    color: #fff;
+}
+
+#replace_flag {
+    color: crimson;
+}
+
+
+
